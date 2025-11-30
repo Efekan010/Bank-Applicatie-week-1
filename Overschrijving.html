@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Overschrijving</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div>🦉 Bankrekeningapplicatie</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="rekening.html">Rekeningen</a>
+        <a href="overschrijving.html">Overschrijvingen</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Overschrijving</h1>
+
+    <input id="bedrag" class="inputBox" placeholder="Kies uw bedrag"
+           onclick="clearPlaceholder(this)">
+
+    <input id="gever" class="inputBox" placeholder="Rekeningnummer gever"
+           onclick="clearPlaceholder(this)" 
+           onblur="checkIBAN(this)">
+
+    <input id="ontvanger" class="inputBox" placeholder="Rekeningnummer ontvanger"
+           onclick="clearPlaceholder(this)"
+           onblur="checkIBAN(this)">
+
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
